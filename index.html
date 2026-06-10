@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desi DeLights - Food Delivery</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+               <svg width="42" height="42" viewBox="0 0 100 100">
+                  <circle cx="50" cy="50" r="48" fill="#ff4d4d"/>
+                <text x="50%" y="55%" text-anchor="middle" fill="white" font-size="40px" font-family="Poppins" dy=".3em">DL</text>
+               </svg>
+                <h1>Desi DeLights</h1>
+            </div>
+            <nav>
+                <a href="#Menu">Menu</a>
+                <a href="#Gallery">Gallery</a>
+                <a href="#FAQs">FAQs</a>
+                <a href="#contact">Order</a>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <h2>
+                    Fresh - Fast - Flavourful
+                </h2>
+                <p>Your Favourite Desi Khana delivered Hot at Your Door.</p>
+                <a href="#Menu" class="btn"> Explore Menu</a>
+            </section>
+            <section id="Menu" class="Menu-section">
+                <h2 class="section-title">Our BestSellers</h2>
+                <div class="menu-grid">
+                    <div class="menu-card">
+                        <img src="assets/biryani1.jpg" alt="Chicken Biryani">
+                        <h3>Chicken Biryani</h3>
+                        <p>Spicy, Aromatic and Delicious.</p>
+                    </div>
+                    <div class="menu-card">
+                        <img src="assets/biryani2.jpg" alt="Chicken karahi">
+                        <h3>Chicken Karahi</h3>
+                        <p>Rich & Full of Flavour.</p>
+                    </div>
+                    <div class="menu-card">
+                        <img src="assets/kabab.jpg" alt="Chicken Kabab">
+                        <h3>Chicken Kabab</h3>
+                        <p>Juicy, Soft and Tasty.</p>
+                    </div>
+                    <div class="menu-card">
+                        <img src="assets/tikka.jpg" alt="Chicken Tikka">
+                        <h3>Chicken Tikka</h3>
+                        <p>Spicy and Tempting.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="Gallery" class="Gallery">
+                <h2 class="section-title">Food Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="assets/biryani1.jpg" alt="Chicken Biryani">
+                    <img src="assets/biryani2.jpg" alt="Chicken karahi">
+                    <img src="assets/kabab.jpg" alt="Chicken Kabab">
+                    <img src="assets/tikka.jpg" alt="Chicken Tikka">
+                </div>
+            </section>
+            <section id="contact" class="contact">
+                <h2 class="section-title">Place Your Order</h2>
+                <form class="form" aria-label="Order Form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                    <label for="email" >Email</label>
+                    <input type="email" id="email" required>
+                    <label>Choose Dishes</label>
+                    <div class="checkboxes">
+                        <label><input type="checkbox">Chicken Biryani</label>
+                        <label><input type="checkbox">Chicken Karahi</label>
+                        <label><input type="checkbox">Chicken Kabab</label>
+                        <label><input type="checkbox">Chicken Tikka</label>
+                    </div>
+                    <label>Delivery Type</label>
+                    <div class="radios">
+                        <label><input type="radio" name="Delivery" required>Regular</label>
+                        <label><input type="radio" name="Delivery">Express</label>
+                    </div>
+                    <label for="city">City</label>
+                    <select id="city">
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                        <option>Karachi</option>
+                        <option>Khanewal</option>
+                    </select>
+                    <label for="special-requirements">Special Requirements</label>
+                    <textarea id="special-requirements"></textarea>
+                    <button class="btn" type="submit">Order</button>
+                </form>
+            </section>
+            <section id="FAQs" class="FAQs">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                    <div class="faq">
+                       <input type="checkbox" id="faq1" class="faq-toggle">
+                       <label for="faq1" class="faq-label">What are your delivery hours?</label>
+                       <div class="faq-content">
+                        <p>We deliver from 10 AM to 11 PM.</p>
+                       </div>
+                    </div>
+                    <div class="faq">
+                        <input type="checkbox" id="faq2" class="faq-toggle">
+                        <label for="faq2" class="faq-label">What payment menthods do we use? </label>
+                        <div class="faq-content">
+                            <p>We accept cash along with credit/debit cards.</p>
+                        </div>
+                    </div>
+                    <div class="faq">
+                        <input type="checkbox" id="faq3" class="faq-toggle">
+                        <label for="faq3" class="faq-label">How do I know if my order is placed?</label>
+                        <div class="faq-content">
+                            <p>A confirmation email will be sent shortly after placing your order.</p>
+                        </div>
+                    </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>2025 Desi DeLights | All Rights Reserved. </p>
+        </footer>
+    </body>
+</html>
